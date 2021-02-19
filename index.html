@@ -677,7 +677,8 @@
     .spanish_p1 span,
     .spanish_p2 span,
     .spanish_p3 span,
-    .spanish_p4 span {
+    .spanish_p4 span,
+    .spanish_p5 span {
       display: none;
     }
 
@@ -699,6 +700,10 @@
 
     .spanish_p4::after {
       content: "Un blog muy colorido, donde puedes crear posts, manejar borradores y aprovar, rechazar, postear o eliminar post dependiendo de tu rol de usuario."
+    }
+
+    .spanish_p5::after {
+      content: "Esta aplicación web crea un catálogo online para una pequeña librería local, donde los usuarios pueden navegar por los diversos libros disponibles y manejar sus cuentas personales."
     }
 
 
@@ -772,6 +777,50 @@
           </div>
 
           <div class="projects">
+
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="https://raw.githubusercontent.com/jaumemy/mdn-django-locallibrary/main/mdn_locallibrary.png" alt="mdn local library screenshot">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">Fundamentals</span>
+                    <span class="skill">Sessions</span>
+                    <span class="skill">Testing</span>
+                    <span class="skill">Server Security</span>
+                  </div>
+
+                  <div class="project-title">
+                    Local Library
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p5"> <span> This web application creates an online catalog for a small local library, where users can browse available books and manage their accounts. </span> </p>
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/mdn-django-locallibrary"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
+                    <a href="https://mdn-django-locallibrary.herokuapp.com/catalog/"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
 
 
             <div class="project">
@@ -1001,6 +1050,9 @@
 
     const translate_p4 = document.querySelector('.translate_p4')
     translate_p4.classList.toggle('spanish_p4')
+
+    const translate_p5 = document.querySelector('.translate_p5')
+    translate_p5.classList.toggle('spanish_p5')
   }
 
 
