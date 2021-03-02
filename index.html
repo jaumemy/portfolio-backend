@@ -678,7 +678,8 @@
     .spanish_p2 span,
     .spanish_p3 span,
     .spanish_p4 span,
-    .spanish_p5 span {
+    .spanish_p5 span,
+    .spanish_p6 span {
       display: none;
     }
 
@@ -704,6 +705,10 @@
 
     .spanish_p5::after {
       content: "Esta aplicación web crea un catálogo online para una pequeña librería local, donde los usuarios pueden navegar por los diversos libros disponibles y manejar sus cuentas personales."
+    }
+
+    .spanish_p6::after {
+      content: "Este blog se ha hecho siguiendo los requerimientos del tutorial de mdn, pero sin ningún tipo de guía. En él se puede escribir un blog o comentar como un usuario registrado."
     }
 
 
@@ -777,6 +782,47 @@
           </div>
 
           <div class="projects">
+
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="https://raw.githubusercontent.com/jaumemy/mdn-django-diyblog/main/mdn_diyblog.png" alt="mdn diyblog screenshot">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">Fundamentals</span>
+                    <span class="skill">Testing</span>
+                    <span class="skill">Server Security</span>
+                  </div>
+
+                  <div class="project-title">
+                    DIY BLOG
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p5"> <span> This is a mini blog, done following the requirements on mdn tutorial but no guidance, where you can post or comment as a logged user. </span> </p>
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/mdn-django-diyblog" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
+                    <a href="https://mdn-django-diyblog.herokuapp.com" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
 
 
 
@@ -1053,6 +1099,9 @@
 
     const translate_p5 = document.querySelector('.translate_p5')
     translate_p5.classList.toggle('spanish_p5')
+
+    const translate_p6 = document.querySelector('.translate_p6')
+    translate_p6.classList.toggle('spanish_p6')
   }
 
 
