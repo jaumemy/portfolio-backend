@@ -679,7 +679,8 @@
     .spanish_p3 span,
     .spanish_p4 span,
     .spanish_p5 span,
-    .spanish_p6 span {
+    .spanish_p6 span,
+    .spanish_p7 span {
       display: none;
     }
 
@@ -709,6 +710,10 @@
 
     .spanish_p6::after {
       content: "Este blog se ha hecho siguiendo los requerimientos del tutorial de mdn, pero sin ningún tipo de guía. En él se puede escribir un blog o comentar como un usuario registrado."
+    }
+
+    .spanish_p7::after {
+      content: "Dashboard para usuarios registrados con información proviniente de una API sobre el Covid-19 tanto a nivel mundial como por el país seleccionado por el usuario."
     }
 
 
@@ -782,6 +787,53 @@
           </div>
 
           <div class="projects">
+
+
+
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="https://raw.githubusercontent.com/jaumemy/whaleandjaguar-project/main/covid19dashboard.png" alt="covid19 dashboard screenshot">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">API</span>
+                    <span class="skill">Requests</span>
+                    <span class="skill">User authentication</span>
+                  </div>
+
+                  <div class="project-title">
+                    COVID-19 DASHBOARD
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p7"> <span> It is a basic Dashboard for registered users, showing information provided by an API about Covid-19, both globally and for a country selected by the user </span> </p>
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/whaleandjaguar-project" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
+                    <a href="https://cvd19dashboard.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
 
 
 
@@ -1102,6 +1154,9 @@
 
     const translate_p6 = document.querySelector('.translate_p6')
     translate_p6.classList.toggle('spanish_p6')
+
+    const translate_p7 = document.querySelector('.translate_p7')
+    translate_p7.classList.toggle('spanish_p7')
   }
 
 
