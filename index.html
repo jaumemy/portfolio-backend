@@ -680,7 +680,8 @@
     .spanish_p4 span,
     .spanish_p5 span,
     .spanish_p6 span,
-    .spanish_p7 span {
+    .spanish_p7 span,
+    .spanish_p8 span {
       display: none;
     }
 
@@ -689,7 +690,7 @@
 
 
     .spanish_p1::after {
-      content: "Trabajo con Django y Python. Tengo algo de experiencia con PostgreAQL, AWS y S3 Buckets. Aquí puedes ver todos mis proyectos de Back End."
+      content: "Trabajo con Django y Python. Tengo algo de experiencia con Requests y APIS, PostgreSQL, AWS y S3 Buckets. Aquí puedes ver mis proyectos de Back End."
     }
 
     .spanish_p2::after {
@@ -714,6 +715,10 @@
 
     .spanish_p7::after {
       content: "Dashboard para usuarios registrados con información proviniente de una API sobre el Covid-19 tanto a nivel mundial como por el país seleccionado por el usuario."
+    }
+
+    .spanish_p8::after {
+      content: "Es un front end básico para mostrar y pedir información sobre jugadores de la NBA extraída de un endpoint dónde está almacenada."
     }
 
 
@@ -773,9 +778,9 @@
           <div class="card-description" id="backendAnchorTag">
             <p class="findme translate_p1"> <span> I work with Django and Python.
               <br>
-              I have some experience with PostreSQL, AWS and S3 Buckets.
+              I have some experience with Requests and APIs, PostreSQL, AWS and S3 Buckets.
               <br>
-              You can see all of my Back End projects here </span> </p>
+              You can see my Back End projects here </span> </p>
           </div>
 
         </div>
@@ -787,6 +792,48 @@
           </div>
 
           <div class="projects">
+
+
+
+
+            <div class="project">
+
+              <div class="card">
+
+                <div class="image">
+
+                  <img class="card-pic backend" src="https://github.com/jaumemy/macheight-sampleproject/blob/5f03448cafa15a969c0eb8c5c18a7db048539af2/macheight_sampleproject.png?raw=true" alt="covid19 dashboard screenshot">
+
+                </div>
+
+                <div class="card-description backend">
+
+                  <div class="project-skills">
+                    <span class="skill">Django</span>
+                    <span class="skill">API</span>
+                    <span class="skill">Requests</span>
+                    <span class="skill">Algorithms & Big(O)</span>
+                  </div>
+
+                  <div class="project-title">
+                    NBA PLAYERS
+                  </div>
+
+                  <div class="project-text">
+                    <p class="translate_p8"> <span> It is a basic front end to show and ask for some information about nba players heights, taken from an endpoint that stores it.</span> </p>
+
+                  </div>
+
+                  <div class="project-links">
+                    <a href="https://github.com/jaumemy/macheight-sampleproject" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/github.1d8393ee3ff2.png"/>  Code</a>
+                    <a href="https://nbaplayers-project.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img class="imgcard" src="https://jm50projects.herokuapp.com/static/images/portfolio/website.dc3585159131.png"> Live</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
 
 
 
@@ -1157,6 +1204,9 @@
 
     const translate_p7 = document.querySelector('.translate_p7')
     translate_p7.classList.toggle('spanish_p7')
+
+    const translate_p8 = document.querySelector('.translate_p8')
+    translate_p8.classList.toggle('spanish_p8')
   }
 
 
